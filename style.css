@@ -1,44 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate Company Logo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container"></div>
-    <div class="icon-box-container">
-        <div class="block first-block"></div>
-        <div class="block second-block"></div>
-        <div class="block third-block"></div>
-    </div>
-    <div class="text-container">
-        <h1>
-            CORPORATE 
-        </h1>
-        <h3>TAGLINE GOES HERE</h3>
-    </div>
-    <div>
-        <main>
-            <section>
-                <h2>Some Title</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, ut aliquid totam recusandae dolores quos laborum praesentium veritatis itaque commodi omnis fugiat fuga, esse non rem obcaecati ab repellat autem. Est, natus quae. Aut, officiis commodi ullam hic magnam voluptatum aspernatur ipsum qui quia sapiente, labore in ducimus doloremque! Corporis.
-            </section>
-            <section>
-                <h2>Some Title</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam rerum cumque cupiditate? Voluptas maiores quam vero neque cupiditate tempore soluta non quisquam omnis incidunt repudiandae praesentium animi corporis odit facere sed, nemo eos illo ea quia dicta, quas obcaecati. Unde earum, nisi est id repellat totam quis pariatur maiores.
-            </section>
-            <section>
-                <h2>Some Title</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus asperiores nihil deleniti quis ex. Iusto porro exercitationem nulla omnis excepturi ab odit numquam doloribus impedit vitae neque fuga nihil, eaque, rerum ratione pariatur sint obcaecati sequi sunt quod animi unde molestiae optio. Hic nobis, cumque cupiditate corrupti laudantium dolorem quo.
-            </section>
-            <section>
-                <h2>Some Title</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, corporis eveniet placeat eius perspiciatis expedita qui in tenetur recusandae voluptates eos doloribus at maiores quas sapiente blanditiis laborum molestiae reprehenderit iusto error ipsum saepe dolores? Cumque animi error vero laborum ratione voluptatum corrupti architecto molestiae aspernatur? In adipisci mollitia quisquam?
-            </section> 
-        </main>
-    </div>
-</body>
-</html>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.icon-box-container{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin-bottom: 0;   
+}
+
+.block{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    margin: 12px; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.first-block{
+    animation-name: first-block;
+}
+
+@keyframes first-block {
+    0%{
+       transform: translateX(-1000px); 
+       border-radius:  0 0 0 50px;
+    }
+    25%{
+        border-radius: 0 0 50px 50px;
+    }
+    50%{
+        transform: translateX(0);
+        border-radius: 50px 0 50px 50px;
+    }
+    75%{
+        transform: rotate(-45deg);
+        transform-origin: bottom left;
+        border-right: 50px 50px 50px 50px;
+    }
+    100%{
+        transform: rotate(-45deg) translateX(50px);
+    }
+}
+
+.second-block{
+    animation-name: second-block;
+}
+
+@keyframes second-block {
+    0%{
+       transform: translateY(-1000px); 
+       border-radius:  0 0 0 50px;
+    }
+    25%{
+        border-radius: 0 0 50px 50px;
+    }
+    50%{
+        transform: translateY(50px);
+        border-radius: 50px 0 50px 50px;
+    }
+    75%{
+        transform: translateY(-120px);
+        border-right: 50px 50px 50px 50px;
+    }
+    100%{
+        transform: translateY(-100px) rotate(-45deg);
+    }
+}
+
+.third-block{
+    animation-name: third-block;
+    animation-timing-function: ease-out;
+}
+
+@keyframes third-block {
+    0%{
+       transform: translateX(1000px);
+        border-radius:  0 0 0 50px;
+    }
+    25%{
+        border-radius: 0 0 50px 50px;
+    }
+    50%{
+        transform: translateX(0);
+        border-radius: 0 50px 50px 50px;
+    }
+    75%{
+        transform: rotate(45deg);
+        transform-origin: bottom right;
+        border-right: 50px 50px 50px 50px;
+    }
+    100%{
+        transform: rotate(45deg) translateX(-50px);
+    } 
+    
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: text-container 2s forwards;
+    position: relative;
+    color: rgb(65, 62, 62);
+}
+
+.text-container > h1{
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    transition: transform 1s;
+}
+.text-container > h3{
+    letter-spacing: 10px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+@keyframes text-container {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(-9rem); 
+    }
+}
+.text-container>h1:hover{
+    transform: rotateY(180deg);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(350px, 400px));
+    gap: 1.2rem;
+    justify-content: center;
+    animation: tanimateSection 1.5s .5s;
+}
+
+section{
+    position: relative;
+    min-width: 60%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: transform 2s;
+}
+section > h2{
+    text-align: center;
+}
+
+section:hover{
+    transform: translateY(-3rem) 
+}
+
+@keyframes tanimateSection {
+    0%{transform: translateY(0)}
+    50%{
+        transform: translateY(-3.5rem)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
