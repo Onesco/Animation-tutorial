@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Company Logo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <div class="icon-box-container">
+        <div class="block first-block"></div>
+        <div class="block second-block"></div>
+        <div class="block third-block"></div>
+    </div>
+    <div class="text-container">
+        <h1>
+            CORPORATE 
+        </h1>
+        <h3>TAGLINE GOES HERE</h3>
+    </div>
+    <div>
+        <main>
+            <section>
+                <h2>Some Title</h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, ut aliquid totam recusandae dolores quos laborum praesentium veritatis itaque commodi omnis fugiat fuga, esse non rem obcaecati ab repellat autem. Est, natus quae. Aut, officiis commodi ullam hic magnam voluptatum aspernatur ipsum qui quia sapiente, labore in ducimus doloremque! Corporis.
+            </section>
+            <section>
+                <h2>Some Title</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam rerum cumque cupiditate? Voluptas maiores quam vero neque cupiditate tempore soluta non quisquam omnis incidunt repudiandae praesentium animi corporis odit facere sed, nemo eos illo ea quia dicta, quas obcaecati. Unde earum, nisi est id repellat totam quis pariatur maiores.
+            </section>
+            <section>
+                <h2>Some Title</h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus asperiores nihil deleniti quis ex. Iusto porro exercitationem nulla omnis excepturi ab odit numquam doloribus impedit vitae neque fuga nihil, eaque, rerum ratione pariatur sint obcaecati sequi sunt quod animi unde molestiae optio. Hic nobis, cumque cupiditate corrupti laudantium dolorem quo.
+            </section>
+            <section>
+                <h2>Some Title</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, corporis eveniet placeat eius perspiciatis expedita qui in tenetur recusandae voluptates eos doloribus at maiores quas sapiente blanditiis laborum molestiae reprehenderit iusto error ipsum saepe dolores? Cumque animi error vero laborum ratione voluptatum corrupti architecto molestiae aspernatur? In adipisci mollitia quisquam?
+            </section> 
+        </main>
+    </div>
+</body>
+</html>
